@@ -68,7 +68,7 @@
       })
     }
     if(dataProvider2.rows) {
-      dataProvider.rows.forEach( row => {
+      dataProvider2.rows.forEach( row => {
         let eventColor = mappingColor2 ?? defaultColor2  
         eventsList.push({
           title: row[mappingTitle2],
