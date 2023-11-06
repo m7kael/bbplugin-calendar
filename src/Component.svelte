@@ -55,11 +55,10 @@
   // Map events
   if(dataProvider.rows) {
       dataProvider.rows.forEach( row => {
-        let eventColor = mappingColor ?? defaultColor  
         eventsList.push({
           title: row[mappingTitle],
           date: row[mappingDate],
-          color: eventColor,
+          color: row[mappingColor] ?? defaultColor,
           start: row[mappingStart],
           end: row[mappingEnd],
           allDay: allday,
@@ -68,12 +67,11 @@
       })
     }
     if(dataProvider2.rows) {
-      dataProvider2.rows.forEach( row2 => {
-        let eventColor = mappingColor2 ?? defaultColor2  
+      dataProvider2.rows.forEach( row2 => { 
         eventsList.push({
           title: row2[mappingTitle2],
           date: row2[mappingDate2],
-          color: eventColor,
+          color: row2[mappingColor2] ?? defaultColor2,
           start: row2[mappingStart2],
           end: row2[mappingEnd2],
           allDay: allday2,
