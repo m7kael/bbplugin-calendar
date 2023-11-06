@@ -68,16 +68,16 @@
       })
     }
     if(dataProvider2.rows) {
-      dataProvider2.rows.forEach( row => {
+      dataProvider2.rows.forEach( row2 => {
         let eventColor = mappingColor2 ?? defaultColor2  
         eventsList.push({
-          title: row[mappingTitle2],
-          date: row[mappingDate2],
+          title: row2[mappingTitle2],
+          date: row2[mappingDate2],
           color: eventColor,
-          start: row[mappingStart2],
-          end: row[mappingEnd2],
+          start: row2[mappingStart2],
+          end: row2[mappingEnd2],
           allDay: allday2,
-          event: row
+          event: row2
         })
       })
     }
